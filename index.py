@@ -112,5 +112,15 @@ def random():
 
     getQuestion(i)
 
+while(True):
+    c = int(input("\n\nEntre com 0 para finalizar o programa, ou 1 para gerar outra questão: "))
 
-random()
+    if(c == 0):
+        print("\n\nPrograma finalizado.")
+        break
+
+    elif(c == 1):
+        random()
+    
+    else:
+        print("Número inválido.")
